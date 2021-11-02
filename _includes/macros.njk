@@ -1,0 +1,3 @@
+{% macro postURL(post) %}
+{% if (post.data.externalurl != undefined) %}{{ post.data.externalurl | url }}{% else %}{{ post.url | url }}{% endif %}
+{% endmacro %}
